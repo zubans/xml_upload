@@ -1,19 +1,4 @@
-# Agent cabinet
-
-##Contains
-🐳 Docker + PHP 8.1 + MySQL + Nginx + Symfony 6.1 Boilerplate
-
-## Description
-
-This is a complete stack for running Symfony 6.1 into Docker containers using docker-compose tool with [docker-sync library](https://docker-sync.readthedocs.io/en/latest/).
-
-It is composed by 4 containers:
-
-- `nginx`, acting as the webserver.
-- `php`, the PHP-FPM container with the 8.0 version of PHP.
-- `db` which is the MySQL database container with a **MySQL 8.0** image.
-- `symfony_docker_app_sync` to sync files using library `docker-sync `.
-
+XML test case
 ## Installation
 
 1. 😀 Clone this rep.
@@ -32,5 +17,13 @@ It is composed by 4 containers:
 DATABASE_URL=mysql://db_user:db_password@db:3306/db_name?serverVersion=8.0.23
 ```
 
-You could change the name, user and password of the database in the `env` file at the root of the project.
+##Annotation
+Вывод продуктов, сортировка, фильтрация, выборка по названию, весу.
+
+В данном приложении не хватает
+ - покрытия тестами. Тест написан для примера
+ - работы с большими файлами
+ - добавление стримингового сервиса для обработки нескольких потоков при импорте из XML
+ - доработки для нормального вывода пагинации
+
 

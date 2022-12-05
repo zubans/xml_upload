@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85162fc6-3181-457d-8d9b-5460953b57d9" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/migrations/Version20221203112826.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
@@ -513,7 +514,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670050749494</updated>
-      <workItem from="1670050752826" duration="44018000" />
+      <workItem from="1670050752826" duration="44584000" />
     </task>
     <servers />
   </component>
