@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Library/Caches/JetBrains/Fleet/backend/e4k6l8ndpfjbgugr1f7u/external_build_system/prod.695ea2d2/modules/prod.iml" filepath="$USER_HOME$/Library/Caches/JetBrains/Fleet/backend/e4k6l8ndpfjbgugr1f7u/external_build_system/prod.695ea2d2/modules/prod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/prod.iml" filepath="$PROJECT_DIR$/.idea/prod.iml" />
     </modules>
   </component>
 </project>

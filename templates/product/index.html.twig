@@ -1,0 +1,36 @@
+{{ form(form) }}
+
+<table border="1">
+{% for product in products %}
+    <tr>
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.weigth }}</td>
+      <td>{{ product.weightPrecision }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+<form method="get">
+  {% if countPages > 1 %}
+  {% for page in 1..countPages %} <!-- на больших данных надо дорабатывать, чтобы шло около 20 страниц с серединой в текущем -->
+    <span>
+      <button type="submit" name="page" value="{{ page }}">
+        {% if activePage == page %} <b><b>{{ page }}</b></b> {% else %}{{ page }}{% endif %}</button></span>
+  {% endfor %}
+  {% endif %}
+</form>
+
+<form action="{{ path('file_upload') }}" method="post" enctype="multipart/form-data">
+
+  <div>
+    <label for="myfile">File to upload:</label>
+    <input type="file" name="myfile" id="myfile">
+  </div>
+
+  <button type="submit">Send</button>
+
+</form>
+
+{#{{ form(fileForm) }}#}
+
