@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name coverage.${NGINX_BACKEND_DOMAIN};
+    root /var/www/symfony/tests/coverage;
+    
+    location / {
+        try_files $uri /index.html;
+    }
+
+    error_log /dev/stdout info;
+    access_log /var/log/nginx/project_access.log;
+}

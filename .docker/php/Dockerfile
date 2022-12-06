@@ -26,7 +26,13 @@ RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 RUN docker-php-ext-install \
     pdo pdo_mysql zip xsl gd intl opcache exif mbstring
 
-RUN pecl install xdebug; \
+RUN pecl install xdebug \
+    \
+    && docker-php-ext-enable xdebug \
+    && echo "xdebug.mode=debug" >> /usr/local/etc/php/conf.d/docker-php-config.ini  \
+    && echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-config.ini \
+    && echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-config.ini ;\
+    \
     docker-php-ext-enable xdebug
 
 # Set timezone

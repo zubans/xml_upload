@@ -32,6 +32,10 @@ class ProductController extends AbstractController
         $res = $doctrine
             ->getRepository(Product::class);
 
+        dd($res
+            ->findFilteredQueryBuilder($queryParams)
+            ->getQuery()
+            );
         $products = $res
             ->findFilteredQueryBuilder($queryParams)
             ->getQuery()

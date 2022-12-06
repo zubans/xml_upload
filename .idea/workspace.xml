@@ -2,353 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85162fc6-3181-457d-8d9b-5460953b57d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20221203112826.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/RequestHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/XmlService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/RequestHelperTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/docker-sync.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.docker/nginx/templates/coverage.conf.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CategoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/FileServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ProductControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ProductTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/nginx/templates/default.conf.template" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/templates/default.conf.template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/php/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/.depend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/.github/workflows/CICD.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/.depend" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/changes.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/contactsbody.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/docs.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/fullpage.sty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/hevea.sty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/local.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/moreverb.sty" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/postproc.mll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/short.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/doc/unison-manual.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/dune-project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/.xvpics/U.32x32x256.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.16x16x16m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.24x24x16m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.256x256x16m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.32x32x16.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.32x32x16m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.32x32x256.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.32x32x256.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.48x48x16m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/U.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/Unison.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/Unison.xpm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/success.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/svg_to_data.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/unison-icon.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/unison-logo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/icons/unison.haruo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/setup/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/setup/Unison.iss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/setup/plink.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/setup/postinstall.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/.depend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/BUGS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/CONTRIB" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/COPYING" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/INSTALL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/INSTALL.gtk2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/INSTALL.win32" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/INSTALL.win32-cygwin-gnuc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/INSTALL.win32-msvc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/Makefile.OCaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/Makefile.ProjectInfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/NEWS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ROADMAP.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/TODO.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/abort.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/abort.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/bytearray.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/bytearray.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/bytearray_stubs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/case.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/case.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/checksum.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/checksum.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/clroot.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/clroot.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/common.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/common.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/copy.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/copy.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/external.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/external.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fileinfo.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fileinfo.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/files.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/files.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fileutil.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fileutil.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fingerprint.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fingerprint.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fpcache.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fpcache.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fs.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fs.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/inotify.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/inotify.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/inotify_stubs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/lwt_inotify.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/lwt_inotify.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/linux/watcher.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/watchercommon.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/watchercommon.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/windows/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/windows/shortnames.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/windows/shortnames.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/windows/shortnames_stubs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fsmonitor/windows/watcher.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fspath.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fspath.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fswatch.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fswatch.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fswatchold.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/fswatchold.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/globals.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/globals.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/linkgtk.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/linkgtk2.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/linktext.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lock.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lock.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/META" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/depend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/example/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/example/editor.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/example/relay.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/generic/lwt_unix_impl.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt_unix.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt_unix.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt_unix_stubs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt_util.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/lwt_util.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/pqueue.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/pqueue.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/win/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/win/lwt_unix_impl.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/win/lwt_win.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/lwt/win/lwt_win.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/main.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/name.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/name.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/os.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/os.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/osx.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/osx.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/osxsupport.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/path.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/path.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/pixmaps.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/pred.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/pred.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/props.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/props.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/pty.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/recon.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/recon.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/remote.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/remote.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/sortri.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/sortri.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/stasher.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/stasher.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/strings.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/strings.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/generic/system_impl.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/system_generic.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/system_intf.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/system_win.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/system_win_stubs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/win/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/system/win/system_impl.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/terminal.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/terminal.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/test.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/test.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/transfer.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/transfer.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/transport.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/transport.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/tree.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/tree.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/META" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/dune" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/myMap.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/myMap.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/prefs.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/prefs.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/proplist.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/proplist.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/rx.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/rx.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/safelist.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/safelist.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/trace.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/trace.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/uarg.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/uarg.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/util.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ubase/util.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/ui.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uicommon.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uicommon.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uigtk2.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uigtk2.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/Bridge.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/Bridge.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ColorGradientView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ColorGradientView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/English.lproj/MainMenu.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ImageAndTextCell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ImageAndTextCell.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/MyController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/MyController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/NotificationController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/NotificationController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/PreferencesController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/PreferencesController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProfileController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProfileController.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProfileTableView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProfileTableView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProgressCell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ProgressCell.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ReconItem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ReconItem.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ReconTableView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ReconTableView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/TrevorsUnison.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/Unison.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/UnisonToolbar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/UnisonToolbar.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/cltool.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/main.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarAdvanced.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarEndAdvanced.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarEndBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarEndGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarEndGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarEndWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarLightGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/progressicons/ProgressBarWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ssselectabletoolbar/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ssselectabletoolbar/SSSelectableToolbar.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ssselectabletoolbar/SSSelectableToolbar.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ssselectabletoolbar/SSSelectableToolbarItem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/ssselectabletoolbar/SSSelectableToolbarItem.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_Absent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_Created.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_Deleted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_Modified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_PropsChanged.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Change_Unmodified.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Outline-Deep.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Outline-Flat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/Outline-Flattened.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-conflict.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-error.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-left-blue.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-left-green.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-merge.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-mixed.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-right-blue.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-right-green.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/tableicons/table-skip.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/add.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/diff.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/go.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/left.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/merge.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/quit.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/rescan.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/restart.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/right.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/save.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/toolbar/skip.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimac/uimacnew.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimacbridge.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uimacbridgenew.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uitext.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uitext.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/unicode.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/unicode.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/unicode_tables.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/unison.hgr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/update.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/update.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uutil.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/uutil.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/win32rc/U.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/win32rc/unison.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/winmain.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/xferhint.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/src/xferhint.mli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/tests/fstest/fstest.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/tests/fstest/fstest.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/tests/fstest/fstest.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/tests/fstest/fstest_Prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/codepages/lowcase.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/codepages/upcase.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/reorder.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/unicode.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/unicode_build.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unicode_utils/unicode_test.ml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/unison-2.51.3/unison.opam" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/v2.51.3.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticlesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/php/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3b46873-2dc5-4c5a-96e0-87a1b1935957.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3b46873-2dc5-4c5a-96e0-87a1b1935957.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -471,8 +143,9 @@
     "com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary": "PHPUnit",
     "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "Docker Compose",
     "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm": "Docker Compose",
+    "last_opened_file_path": "/Users/sergeyzyuban/projects/products/prod/tests",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "settings.editor.selected.configurable": "web-ide.project.structure",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -481,7 +154,21 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="PHPUnit.RequestHelperTest.testValidate">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/.docker/nginx/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.FileServiceTest.testCategory">
+    <configuration name="FileServiceTest.testCategory" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\FileServiceTest" configuration_file="/var/www/symfony/phpunit.xml.dist" file="$PROJECT_DIR$/tests/FileServiceTest.php" method="testCategory" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductControllerTest.testCategory" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\ProductControllerTest" configuration_file="/var/www/symfony/phpunit.xml.dist" file="$PROJECT_DIR$/tests/ProductControllerTest.php" method="testCategory" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="RequestHelperTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="App\Tests\RequestHelperTest" configuration_file="/var/www/symfony/phpunit.xml.dist" file="$PROJECT_DIR$/tests/RequestHelperTest.php" scope="Class" />
       <method v="2" />
@@ -501,6 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FileServiceTest.testCategory" />
+        <item itemvalue="PHPUnit.ProductControllerTest.testCategory" />
         <item itemvalue="PHPUnit.RequestHelperTest.testValidate" />
         <item itemvalue="PHPUnit.RequestHelperTest" />
       </list>
@@ -514,7 +203,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670050749494</updated>
-      <workItem from="1670050752826" duration="44584000" />
+      <workItem from="1670050752826" duration="47877000" />
+      <workItem from="1670354706092" duration="7009000" />
     </task>
     <servers />
   </component>
@@ -525,9 +215,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Services/RequestHelper.php</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/Controller/ProductController.php</url>
+          <line>38</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
